@@ -1,0 +1,215 @@
+{
+	"volcanes":[
+		{
+			"id": "1",
+			"pais": "ESTADOS UNIDOS",
+			"nombre": "Caldera de Yellowstone",
+			"camaras":["volcanoes.usgs.gov/yvo/images/webcam/mobile1/current_small.jpg?0.7859957715139009","www.nps.gov/webcams-yell/oldfaith2.jpg","www.nps.gov/webcams-yell/oldfaithvc.jpg"],
+			"sismografos":["volcanoes.usgs.gov/vsc/captures/yellowstone/ylt_last_24.png","volcanoes.usgs.gov/vsc/captures/yellowstone/yml_last_24.png","volcanoes.usgs.gov/vsc/captures/yellowstone/b207_last_24.png","volcanoes.usgs.gov/vsc/captures/yellowstone/ypp_last_24.png?0.49618476228632463"]
+		},
+		{
+			"id": "2",
+			"pais": "ESTADOS UNIDOS",
+			"nombre": "KILAUEA",
+			"camaras": ["hvo.wr.usgs.gov/cams/KIcam/images/PAN.jpg",
+						 "hvo.wr.usgs.gov/cams/K2cam/images/M.jpg",
+						 "hvo.wr.usgs.gov/cams/HMcam/images/M.jpg",
+						 "hvo.wr.usgs.gov/cams/HTcam/images/M.jpg",
+						 "hvo.wr.usgs.gov/cams/R3cam/images/M.jpg",
+						 "modis.higp.hawaii.edu/cgi-bin/modis/mergeimage64?maptype=relief&jperiod=2&lonmin=-155.772&latmin=19.185&"lonmax=-154.812&latmax=19.665&xsize=1509.&ysize=800"
+						],
+			"sismografos": []
+		},
+		{
+			"id": "3",
+			"pais": "ESTADOS UNIDOS",
+			"nombre": "Monte Santa Helena",
+			"camaras": ["www.fs.fed.us/gpnf/volcanocams/msh/images/mshvolcanocam.jpg",
+						 "www.fs.fed.us/gpnf/volcanocams/msh/hdimages/volcanocamhd.jpg",
+						 "www.fs.fed.us/gpnf/volcanocams/msh/hdimages/volcanocamhd.jpg"
+						],
+			"sismografos": []
+		},
+		{
+			"id": "4",
+			"pais": "NUEVA ZELANDA",
+			"nombre": "Monte Ruapehu",
+			"camaras": ["www.geonet.org.nz/images/volcano/volcams/ruapehu/ruapehu.jpg?0.7137976342930217",
+						 "www.geonet.org.nz/images/volcano/volcams/ruapehu-ngauruhoe/ruapehu-ngauruhoe.jpg?0.18964073560243427",
+						 "satepsanone.nesdis.noaa.gov/pub/OMI/OMISO2/images/newzealand.gif"
+						],
+			"sismografos": ["www.geonet.org.nz/p/volcano/drums/latest/fwvz-seismic-drum.png"]
+		},
+		{
+			"id": "5",
+			"pais": "NUEVA ZELANDA",
+			"nombre": "Monte Tongariro",
+			"camaras": ["www.geonet.org.nz/images/volcano/volcams/ngauruhoe/ngauruhoe.jpg"],
+			"sismografos": ["www.geonet.org.nz/p/volcano/drums/latest/wtvz-seismic-drum.png"]
+		},
+		{
+			"id": "6",
+			"pais": "COLOMBIA",
+			"nombre": "Volcán Galeras",
+			"camaras": ["amenazas.ingeominas.gov.co/webcam/pasto/galeras-bruma000.jpg"],
+			"sismografos": ["amenazas.ingeominas.gov.co/helicorders/pasto/heli/ANGV_SHZ_OP_--.2014020212.gif?0.20589730865322053"]
+		},
+		{
+			"id": "7",
+			"pais": "MÉXICO",
+			"nombre": "Popocatepetl",
+			"camaras": ["www.cenapred.gob.mx/images/popo1.jpg",
+						 "www.cenapred.gob.mx/images/popoTlamacas2.jpg",
+						 "www.cenapred.unam.mx/images/imagenPopoTochimilco.jpg",
+						 "www.cenapred.unam.mx/images/popoSur.JPG"
+						],
+			"sismografos": ["www2.ssn.unam.mx/~yi/SSN/sismogramaPP.gif"]
+		},
+		{
+			"id": "8",
+			"pais": "ECUADOR",
+			"nombre": "Volcán Tungurahua",
+			"camaras": ["camaras.igepn.edu.ec/camaras/ovt/ovt.jpg",
+						 "camaras.igepn.edu.ec/camaras/achupashal/achs.jpg",
+						 "camaras.igepn.edu.ec/camaras/pillate/pllt.jpg",
+						 "modis.higp.hawaii.edu/cgi-bin/modis/mergeimage64?maptype=relief&jperiod=7&lonmin=-78.622&latmin=-1.587&lonmax=-78.262&latmax=-1.347&xsize=1200.&ysize=800"
+						],
+			"sismografos": ["correo.igepn.edu.ec/heli/heli/RETU_SHZ_EC_--.2014020212.gif"]
+		},
+		{
+			"id": "9",
+			"pais": "ALASKA",
+			"nombre": "Monte Lliamna",
+			"camaras": ["www.avo.alaska.edu/webcam/iliamna.jpg?0.4735970830941637"],
+			"sismografos": ["www.avo.alaska.edu/webicorders/INE24hr_heli.png?0.5623135402292847"]
+		},
+		{
+			"id": "10",
+			"pais": "ECUADOR",
+			"nombre": "Volcán Reventador",
+			"camaras": ["camaras.igepn.edu.ec/camaras/rvntdr/rvntdr.jpg",
+ "modis.higp.hawaii.edu/cgi-bin/modis/mergeimage64?maptype=relief&jperiod=7&lonmin=-77.836&latmin=-0.198&lonmax=-77.476&latmax=0.042&xsize=1200.&ysize=800"],
+			"sismografos": ["correo.igepn.edu.ec/heli/heli/CONE_SHZ_EC_--.2014020200.gif?0.5633293173741549"]
+		},
+		{
+			"id": "11",
+			"pais": "ECUADOR",
+			"nombre": "Volcán Cotopaxi",
+			"camaras": ["camaras.igepn.edu.ec/camaras/barrancas/brrncs.jpg",
+ "camaras.igepn.edu.ec/camaras/catalina/ctln.jpg",
+ "modis.higp.hawaii.edu/cgi-bin/modis/mergeimage64?maptype=relief&jperiod=7&lonmin=-78.616&latmin=-0.797&lonmax=-78.256&latmax=-0.557&xsize=1200.&ysize=800"],
+			"sismografos": []
+		},
+		{
+			"id": "12",
+			"pais": "ESTADOS UNIDOS",
+			"nombre": "Monte Rainier",
+			"camaras": ["www.nps.gov/webcams-mora/mountain.jpg",
+ "modis.higp.hawaii.edu/cgi-bin/modis/mergeimage64?maptype=relief&jperiod=7&lonmin=-121.94&latmin=46.733&lonmax=-121.58&latmax=46.973&xsize=821.&ysize=800"],
+			"sismografos": []
+		},
+		{
+			"id": "13",
+			"pais": "ITALIA",
+			"nombre": "Monte Etna",
+			"camaras": ["www3.shizuokanet.ne.jp/sinet/cam.acgi$sendImg_now",
+ "modis.higp.hawaii.edu/cgi-bin/modis/mergeimage64?maptype=relief&jperiod=7&lonmin=138.551&latmin=35.238&lonmax=138.911&latmax=35.478&xsize=979.&ysize=800"],
+			"sismografos": []
+		},
+		{
+			"id": "14",
+			"pais": "CHILE",
+			"nombre": "Monte Copahue",
+			"camaras": ["www.sernageomin.cl/camaras/Copahue/fija/copahue.jpg",
+ "modis.higp.hawaii.edu/cgi-bin/modis/mergeimage64?maptype=relief&jperiod=7&lonmin=-71.35&latmin=-37.97&lonmax=-70.99&latmax=-37.73&xsize=948.&ysize=800"],
+			"sismografos": []
+		},
+		{
+			"id": "15",
+			"pais": "INDONESIA",
+			"nombre": "Monte Merapi",
+			"camaras": ["www.merapi.bgl.esdm.go.id/view.php?id=1",
+ "www.merapi.bgl.esdm.go.id/view.php?id=68?0.362631700919432",
+ "modis.higp.hawaii.edu/cgi-bin/modis/mergeimage64?maptype=relief&jperiod=7&lonmin=110.262&latmin=-7.662&lonmax=110.622&latmax=-7.422&xsize=1190.&ysize=800"],
+			"sismografos": []
+		},
+		{
+			"id": "16",
+			"pais": "ISLA MONSERRAT",
+			"nombre": "Monte Soufriere Holls",
+			"camaras": ["webobs.mvo.ms/cgi-bin/photo_alt.pl"],
+			"sismografos": []
+		},
+		{
+			"id": "17",
+			"pais": "ALASKA",
+			"nombre": "Monte Katmai",
+			"camaras": ["www.avo.alaska.edu/webcam/katmai_kabu.jpg",
+ "modis.higp.hawaii.edu/cgi-bin/modis/mergeimage64?maptype=relief&jperiod=7&lonmin=-155.2233&latmin=58.159&lonmax=-154.6833&latmax=58.399&xsize=946.&ysize=800"],
+			"sismografos": []
+		},
+		{
+			"id": "18",
+			"pais": "ESPAÑA",
+			"nombre": "El Hierro",
+			"camaras": ["laspuntas.myipcamera.com:1024/img/snapshot.cgi?size=3&quality=1?0.36018017842434347"],
+			"sismografos": []
+		},
+		{
+			"id": "19",
+			"pais": "JAPÓN",
+			"nombre": "Monte Sukurajima",
+			"camaras": ["www.iuk.ac.jp/sakurajima/sakura01.JPG",
+ "modis.higp.hawaii.edu/cgi-bin/modis/mergeimage64?maptype=relief&jperiod=7&lonmin=130.477&latmin=31.465&lonmax=130.837&latmax=31.705&xsize=1022.&ysize=800"],
+			"sismografos": []
+		},
+		{
+			"id": "20",
+			"pais": "RUSIA",
+			"nombre": "Monte Kluchevskoy",
+			"camaras": ["volcano.febras.net/archive/latest_Klyu.jpg"],
+			"sismografos": []
+		},
+		{
+			"id": "21",
+			"pais": "RUSIA",
+			"nombre": "Monte Kizimen",
+			"camaras": ["www.emsd.ru/video/Kizimen/img_1.jpg",
+ "modis.higp.hawaii.edu/cgi-bin/modis/mergeimage64?maptype=relief&jperiod=7&lonmin=160.05&latmin=55.01&lonmax=160.59&latmax=55.25&xsize=1029.&ysize=800"],
+			"sismografos": []
+		},
+		{
+			"id": "22",
+			"pais": "TANZANIA",
+			"nombre": "Monte Kilimanjaro",
+			"camaras": ["www.kilicam.com/cam_image/tuskerpic.jpg"],
+			"sismografos": []
+		},
+		{
+			"id": "23",
+			"pais": "ITALIA",
+			"nombre": "Monte Vesuvio",
+			"camaras": ["www.campanialive.it/webcam/napolivesuvio/napoli.jpg?0.33316099356882334",
+ "www.campanialive.it/webcam/napolicentro/napolicentro.jpg?0.422783364308998"],
+			"sismografos": []
+		},
+		{
+			"id": "24",
+			"pais": "JAPÓN",
+			"nombre": "Monte Aso",
+			"camaras": ["archive.volcanodiscovery.com/webcam/images/459/latest.jpg",
+ "w3.vgs.kyoto-u.ac.jp/hondocam/newimage.jpg?0.3971038409508765",
+ "www33.ocn.ne.jp/~kazashi/image/licamaso.jpg?0.06223796959966421",
+ "rkk.jp/cgi-bin/mmeye/aso3_view.cgi?0.24718318623490632",
+ "rkk.jp/cgi-bin/mmeye/aso1_view.cgi?0.774548439309001"],
+			"sismografos": []
+		},
+		{
+			"id": "25",
+			"pais": "Monte Asama",
+			"nombre": "JAPÓN",
+			"camaras": ["222.146.205.220:8080/s3?ope=view&CamNo=11&PAGE=?0.979581123450771"],
+			"sismografos": []
+		}
+	]
+}

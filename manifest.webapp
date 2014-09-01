@@ -1,0 +1,39 @@
+{ 
+    "launch_path":"/index.html",
+    "version":"1.0",
+    "name":"VolcanoView",
+    "description": " Is a free application that provides real-time images and news of the world's most active volcanoes.",
+    "icons": {
+        "128": "/img/logo.png"
+    },
+    "default_locale": "es",
+    "fullscreen": "true",
+	"type": "privileged",
+    "permissions": {
+		"systemXHR": { 
+		    "description": "Required to make Network calls" 
+	    },
+         "device-storage:sdcard": {
+            "access": "readwrite",
+            "description": "Required for share pick"
+        },
+        "device-storage:pictures": {
+            "access": "readwrite",
+            "description": "Required for share pick"
+        }
+    },
+    "activities": {
+      "share": {
+            "href": "./index.html",
+            "disposition": "inline",
+            "filters": {
+              "type": ["image/*","image/jpeg","image/png"]
+            },
+            "returnValue": true
+          }
+    },
+    "developer": {
+	    "name": "Aurelio Cuautle Reyes"
+ 	},
+    "chrome": { "navigation": true }
+}

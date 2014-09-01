@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="initial-scale=1, maximum-scale=3, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        
+        <link rel="stylesheet" href="css/uikit.min.css"/>
+        
+        <title>VolcanoView</title>
+         <!-- Owl Carousel Assets -->
+        <link href="js/owl.carousel/owl-carousel/owl.carousel.css" rel="stylesheet">
+        <link href="js/owl.carousel/owl-carousel/owl.theme.css" rel="stylesheet">
+        <style type="text/css">
+            @font-face {
+             font-family: "FiraSansOT-LightItalic";
+             font-style: normal;
+             font-weight: 300;
+             src: url(FiraOpenType/FiraSansOT-LightItalic.otf) format("opentype");
+            } 
+            body
+            {
+                font-family: 'FiraSansOT-LightItalic'; 
+                background-color: #34495e;
+            }
+            .articleRss header h4
+            {
+                color: #fff;
+                font-family: 'FiraSansOT-LightItalic';
+                
+            }
+            .article
+            {
+                color: #fff;
+                font-family: 'FiraSansOT-LightItalic';
+            }
+            article h3
+            {
+                text-align: center;
+                color: #fff;
+                font-family: 'FiraSansOT-LightItalic';
+            }
+            h1
+            {
+                color:#fff;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!--Body -->
+       
+        <div class="uk-container uk-container-center">
+            <div class="uk-grid">
+            <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-type="button_count"></div>
+                <div class="uk-width-1-1">
+                     <nav class="uk-navbar">
+                        <ul class="uk-navbar-nav">
+                            <li><a href="#my-id" data-uk-offcanvas ><i class="uk-icon-medium uk-icon-bars"></i></a></li>
+                            <li><a href=""><i class="uk-icon-medium uk-icon-chevron-up"></i></a></li>
+                            <li><button id="btn-asc" class="uk-icon-button" type="button" style="border-right-width: 0px; border-left-width: 0px; margin-left: 5px; margin-right: 10px;"><i class="uk-icon-medium uk-icon-globe"></i></button> </li>
+                            <li><button id="btn-rss" class="uk-icon-button" type="button" style="border-right-width: 0px; border-left-width: 0px; margin-left: 5px; margin-right: 10px;"><i class="uk-icon-small uk-icon-rss"></i></button></li>
+                            
+                        </ul>
+                    </nav>
+                    <!-- This is the off-canvas sidebar -->
+                    <div id="my-id" class="uk-offcanvas">
+                        <div class="uk-offcanvas-bar">
+                            <div class="uk-panel">
+                                <h3 class="uk-panel-title">VolcanoView</h3>
+                                 App for volcanic monitoring with news, images in real-time cameras and seismograms of the world's most active volcanoes.
+                            </div>
+                            <ul class="uk-nav uk-nav-offcanvas uk-nav-parent-icon" data-uk-nav>
+                                <li class="uk-nav-divider"></li>
+                                <li><button class="uk-button uk-width-1-1 uk-margin-small-bottom" id="btn-volcanoinf">What is a volcano <i class="uk-icon-question"></i></button></li>
+                                <li><button class="uk-button uk-width-1-1 uk-margin-small-bottom" id="btn-volcanoact">Where are the most active volcanoes <i class="uk-icon-question"></i></button></li>
+                                <li class="uk-nav-divider"></li>
+                                <li><button class="uk-button uk-width-1-1 uk-margin-small-bottom" id="btn-rateapp"><i class="uk-icon-star"></i> Rate APP</button></li>
+                                <li><button class="uk-button uk-width-1-1 uk-margin-small-bottom" id="menu-acercade" ><i class="uk-icon-info"></i> About</button></li>
+                            </ul>
+                            
+                        </div>
+                    </div>
+                </div>
+
+               
+            </div>
+            <div class="uk-grid">
+                <div class="uk-width-medium-1-2" id="btncargar">
+                   <!--<button class="uk-button uk-button-success uk-width-1-1" type="button" id="cargar"><i class="uk-icon-refresh"></i> Cargar aleatorio</button>-->
+                </div>
+                <div class="uk-width-medium-1-1" id="leabelVolcanes" style="display:none;text-align:center;">
+                    <h1>List of volcanoes</h1>
+                </div>
+            </div>
+            <div class="uk-grid">
+                <div class="uk-width-1-1"  id="listhome">
+                   
+                </div>
+                <div id="owl-demo" class="owl-carousel owl-theme uk-width-1-1">
+                 
+                  
+                 
+                </div>
+                <div id="listrss" style="display:none;" class="uk-width-1-1">
+                    <div class="uk-alert uk-text-center">Powered by VolcanoDiscovery.com</div>
+                    <ul id="ulrss" class="uk-comment-list">
+                    </ul>
+                </div>
+            </div>
+
+            <div class="uk-grid">
+               
+
+                <div class="uk-width-medium-1-1 uk-text-justify article" id="infoVolcano" style="display:none;">
+                    <article class="uk-article">
+                        <h1 class="uk-article-title">What is a volcano?</h1>
+                        <p class="uk-article-lead article">The word "volcano" comes from the Roman God of Fire, Vulcanus. Also the small volcanic island of Vulcano in the Eolian Islands off Sicily, was called after that god. Apparently, this island was highly active in Ancient times and people believed its crater was the chimney of the Vulcanus' forge,  where the hot lava and ash coming out from the crater were the visible evidence of his activity to forge weapons for the other gods. 
+On Hawai'i, the people attributed volcanic activity to the beautiful, but capricious and at times destructive goddess Pele, who loved fire and hated water. 
+
+Today, a volcano is the term for any place on the surface of the earth, where hot molten rock or magma is erupted or has been in the past.</p>
+                       
+                    </article>
+                    <br/>
+                </div>
+                <div class="uk-width-medium-1-1 uk-text-justify article" id="infoAvolcano" style="display:none;">
+                    <article class="uk-article">
+                        <h1 class="uk-article-title">The most active volcanoes in the world</h1>
+                        <p class="uk-article-lead article">Kilauea volcano on Hawaii is the world's most active volcano, followed by Etna in Italy and Piton de la Fournaise on La Réunion island. 
+After that, it is difficult to decide the exact order on the list, but the following are very close: Stromboli, Merapi, Erta Ale, Ol Doinyo Lengai, Unzen, Yasur, Ambrym, Arenal, Pacaya, Klyuchevsky, Sheveluch, and Erebus.</p>
+                       
+                    </article>
+                    
+                    <br/>
+                </div>
+            </div>
+
+
+            <div class="uk-grid" id="acercade" style="display:none;">
+                <div  class="uk-container" >
+                        <div  class="article uk-text-center"><img src="img/logo.png" /><br/>VolcanoView v1.1</div>
+                        <article class="uk-article">
+                            <h1 class="uk-article-title article">Service Description</h1>
+                            <p class="uk-article-lead article">
+                                <strong>VolcanoView</strong> is a free application that provides real-time images and news of the world's most active volcanoes. 
+                            </p>
+                            <p class="uk-article-lead article">If for some reason it was not in agreement with the app, the user must delete it from your device.
+                            </p>
+                        </article>
+                        <hr/>
+                        <article class="uk-article">
+                             <h1 class="uk-article-title article">FAQ</h1>
+                            
+                            <p class="uk-article-lead article">
+                                <strong>Does VolcanoView store some information?</strong> <br>
+                                VolcanoView saves a copy of the images that you can share on social networks.
+                            </p>
+                            <p class="uk-article-lead article">
+                                <strong>How does it work VolcanoView work?</strong> <br>The app displays a series of images from the cameras monitoring) in the most active volcanoes in the world, as well as its satellite view seismograms and (if available), plus load a news feed about volcanoes and earthquakes.
+                            </p>
+                            <p class="uk-article-lead article">
+                                <strong>Are VolcanoView's images real time? </strong> <br> If, even if the images are obtained from the cameras monitors installed in different volcanoes, these may have to be delayed or disabled, this depends on the agencies in charge of volcano monitoring. On average the images are updated between 1-5 minutes.
+                            </p><hr/>
+                        </article>
+                        <article class="uk-article">
+                            <h1 class="uk-article-title article">Developer</h1>
+                            
+                            <p class="uk-article-lead article">
+                                <i class="uk-icon-terminal"> </i> Aurelio Cuautle Reyes<br/>
+                                <strong><i class="uk-icon-twitter"> </i></strong><a href="http://twitter.com/stalio"> @stalio</a><br/>
+                                <strong><i class="uk-icon-envelope"> </i></strong><a href="mailto:aurelio.cuautle.reyes@gmail.com"> aurelio.cuautle.reyes@gmail.com</a><br/>
+                                <strong><i class="uk-icon-twitter"> </i></strong><a href="http://twitter.com/neyralu"> Translated by @neyralu</a><br/>
+                                
+                            </p>
+                        </article>
+                        <br/>
+                        
+                        </div>
+            </div>
+
+
+        </div>
+        
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/jquery.js"></script>    
+        <script type="text/javascript" src="js/uikit.min.js"></script> 
+        <script type="text/javascript" src="js/owl.carousel/owl-carousel/owl.carousel.js"></script>
+        <script type="text/javascript" src="js/app.js"></script>
+    
+    </body>
+</html>
